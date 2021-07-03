@@ -1,0 +1,116 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(90deg, #b9deed, #efefef);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	max-width: 1120px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.header {
+	background: rgba(255, 43, 68, 0.65);
+	box-shadow: 0px 1px 15px 0px;
+}
+
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	max-width: 50%;
+}
+
+.nav {
+
+}
+
+.menu {
+	list-style: none;
+}
+
+.menu__item {
+	display: inline-block;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 20px;
+}
+
+.menu__item-link {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 26px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.intro {
+	height: calc(100vh - 80px);
+	display: flex;
+	align-items: center;
+}
+
+.intro__container {
+	padding: 0 40px;
+	border-left: 1px dashed #000;
+	border-right: 1px dashed #000;
+}
+
+.intro__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro__title {
+	font-size: 50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	opacity: 0.8;
+}
+
+.intro__subtitle {
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: 500;
+	text-transform: uppercase;
+	opacity: 0.7;
+	letter-spacing: 0.1em;
+}
+
+.buttons {
+	margin-top: 30px;
+}
+
+.btn {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.btn:not(:last-child) {
+	margin-right: 20px;
+}
+
