@@ -43,7 +43,10 @@
           </li>
         </ul>
       </nav>
-      <button class="btn header__btn">Зайти в кабинет</button>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <button class="btn header__btn popup-open">Зайти в кабинет</button>
     </div>
     <div class="header__content">
       <div class="container">
@@ -111,9 +114,11 @@
     </section>
     <section class="start">
       <div class="container">
-        <img class="start__img" src="images/start.svg" alt="">
-        <h2 class="title inline__title">Быстрый старт</h2>
-        <p class="start__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        <div class="start__top">
+          <img class="start__img" src="images/start.svg" alt="">
+          <h2 class="title inline__title">Быстрый старт</h2>
+          <p class="start__text">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+        </div>
         <div class="start__box">
           <div class="start__item">
             <h4 class="start__item-title">100%</h4>
@@ -174,8 +179,10 @@
     </section>
     <section class="partners">
       <div class="container">
-        <img class="partners__img" src="images/partners-title.svg" alt="">
-        <h2 class="title inline__title">Партнеры - топовые бренды</h2>
+        <div class="partners__top">
+          <img class="partners__img" src="images/partners-title.svg" alt="">
+          <h2 class="title inline__title">Партнеры - топовые бренды</h2>
+        </div>
         <div class="partners__box">
           <div class="partners__item">
             <img src="images/partners.svg" alt="" class="partners__item-img">
@@ -247,7 +254,6 @@
         <button class="btn footer__btn">Подписаться</button>
       </form>
       <div class="footer__socials">
-        <div class="footer__socials-item">
           <a href="https://www.twitter.com/" class="footer__socials-link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
@@ -260,23 +266,17 @@
               </defs>
             </svg>
           </a>
-        </div>
-        <div class="footer__socials-item">
           <a href="http://www.youtube.com/" class="footer__socials-link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M22.0576 6.94539C21.9381 6.50142 21.7041 6.09662 21.3789 5.77152C21.0538 5.44641 20.649 5.21239 20.2051 5.09289C18.5701 4.65039 12.0001 4.65039 12.0001 4.65039C12.0001 4.65039 5.43008 4.65039 3.79508 5.09289C3.35111 5.21239 2.94631 5.44641 2.6212 5.77152C2.29609 6.09662 2.06208 6.50142 1.94258 6.94539C1.63729 8.61284 1.48914 10.3053 1.50008 12.0004C1.48914 13.6955 1.63729 15.3879 1.94258 17.0554C2.06208 17.4994 2.29609 17.9042 2.6212 18.2293C2.94631 18.5544 3.35111 18.7884 3.79508 18.9079C5.43008 19.3504 12.0001 19.3504 12.0001 19.3504C12.0001 19.3504 18.5701 19.3504 20.2051 18.9079C20.649 18.7884 21.0538 18.5544 21.3789 18.2293C21.7041 17.9042 21.9381 17.4994 22.0576 17.0554C22.3629 15.3879 22.511 13.6955 22.5001 12.0004C22.511 10.3053 22.3629 8.61284 22.0576 6.94539ZM9.90008 15.1504V8.85039L15.3526 12.0004L9.90008 15.1504Z" fill="white"/>
             </svg>
           </a>
-        </div>
-        <div class="footer__socials-item">
           <a href="https://www.facebook.com/" class="footer__socials-link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.397 20.9972V12.8012H16.162L16.573 9.59217H13.397V7.54817C13.397 6.62217 13.655 5.98817 14.984 5.98817H16.668V3.12717C15.8487 3.03936 15.0251 2.99696 14.201 3.00017C11.757 3.00017 10.079 4.49217 10.079 7.23117V9.58617H7.33203V12.7952H10.085V20.9972H13.397Z" fill="white"/>
             </svg>
           </a>
-        </div>
-        <div class="footer__socials-item">
-          <a href="https://instagram.com/" class="footer__socials-link">
+        <a href="https://instagram.com/" class="footer__socials-link">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16.5 0H7.5C3.3585 0 0 3.3585 0 7.5V16.5C0 20.6415 3.3585 24 7.5 24H16.5C20.6415 24 24 20.6415 24 16.5V7.5C24 3.3585 20.6415 0 16.5 0ZM21.75 16.5C21.75 19.395 19.395 21.75 16.5 21.75H7.5C4.605 21.75 2.25 19.395 2.25 16.5V7.5C2.25 4.605 4.605 2.25 7.5 2.25H16.5C19.395 2.25 21.75 4.605 21.75 7.5V16.5Z" fill="white"/>
               <path d="M12 6C8.6865 6 6 8.6865 6 12C6 15.3135 8.6865 18 12 18C15.3135 18 18 15.3135 18 12C18 8.6865 15.3135 6 12 6ZM12 15.75C9.933 15.75 8.25 14.067 8.25 12C8.25 9.9315 9.933 8.25 12 8.25C14.067 8.25 15.75 9.9315 15.75 12C15.75 14.067 14.067 15.75 12 15.75Z" fill="white"/>
@@ -284,9 +284,18 @@
             </svg>
           </a>
         </div>
-      </div>
     </div>
   </footer>
+
+
+  <div class="popup-fade">
+    <div class="popup">
+      <a class="popup-close" href="#">Закрыть</a>
+      <p>Всплывающие окна имеют широкий диапазон применений...</p>
+    </div>    
+  </div>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
