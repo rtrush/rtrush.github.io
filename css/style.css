@@ -229,6 +229,11 @@ img {
 	margin-right: 20px;
 }
 
+.contacts__link:hover path {
+	fill: #4070F4;
+	transition: fill .4s linear;
+}
+
 .footer {
 	text-align: center;
 	font-size: 16px;
