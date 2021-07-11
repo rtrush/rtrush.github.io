@@ -97,6 +97,7 @@ img {
 }
 
 .intro__title {
+	text-align: center;
 	font-size: 40px;
 	letter-spacing: 2.1px;
 	font-weight: 600;
